@@ -16,7 +16,6 @@ export interface PictureDto {
 }
 export interface UserDto {
   login: LoginDto;
-  icon: string;
   name: NameDto;
   picture: PictureDto;
 }
