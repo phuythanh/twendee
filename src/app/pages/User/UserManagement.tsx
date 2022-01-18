@@ -9,9 +9,9 @@ import {
   incrementIfOdd,
   selectCount,
 } from '../../stores/counterSlice';
-import styles from './Counter.module.css';
+import styles from './UserManagement.module.css';
 
-export function Counter() {
+const UserManagement = () => {
   const count = useAppSelector(selectCount);
   const dispatch = useAppDispatch();
   const [incrementAmount, setIncrementAmount] = useState('2');
@@ -48,4 +48,6 @@ export function Counter() {
       </div>
     </div>
   );
-}
+};
+
+export default UserManagement;
